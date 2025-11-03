@@ -1,0 +1,23 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Upload Files</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='Website.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h1>Upload Files to STORAGE VAULT</h1>
+
+<form method="post" enctype="multipart/form-data">
+    <label>Select Folder:</label>
+    <input type="file" name="files" webkitdirectory directory multiple>
+
+    <label>Select Single File:</label>
+    <input type="file" name="file">
+
+            <input type="submit" value="Upload">
+        </form>
+        <p><a href="/">Go Home</a></p>
+    </div>
+</body>
+</html>
